@@ -8,12 +8,7 @@ class BooleanController extends Controller
 {
   public function index()
   {
-    $students = [
-      [],
-      [],
-      [],
-      [],
-    ];
+    $students = config('students');
     return view('boolean.index', compact('students'));
   }
 }
