@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  margin: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__students {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main__students__student-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 20px rgba(100, 100, 100, 0.5);
+  width: 45%;
+  min-height: 400px;
+}
+
+.main__students__student-card__primary-info {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 125px;
+}
+
+.main__students__student-card__primary-info .student-card__primary-info__image {
+  height: 100%;
+}
+
+.main__students__student-card__primary-info .student-card__primary-info__image img {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+  margin-right: 20px;
+}
+
+.main__students__student-card__primary-info .student-card__primary-info__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main__students__student-card__primary-info h3 {
+  font-size: 24px;
+}
+
+.main__students__student-card__primary-info p {
+  font-size: 24px;
+}
+
+.main__students__student-card__secondary-info {
+  display: flex;
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+.main__students__student-card__secondary-info p {
+  padding-top: 20px;
+  align-self: center;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
