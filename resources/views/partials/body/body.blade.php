@@ -1,5 +1,5 @@
 <body>
-  @include('_header');
-  @include('_main');
-  @include('_footer');
+  @include('partials.body._header')
+  @include('partials.body._main')
+  @include('partials.body._footer')
 </body>

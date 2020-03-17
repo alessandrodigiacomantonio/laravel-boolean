@@ -1,4 +1,4 @@
-@import('before_head.before_head');
-@import('head.head');
-@import('body.body');
-@import('after_body.after_body');
+@include('partials.before_head.before_head')
+@include('partials.head.head')
+@include('partials.body.body')
+@include('partials.after_body.after_body')
