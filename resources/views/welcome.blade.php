@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <a href="{{ route('boolean') }}">BOOLEAN</a>
+                    <a href="{{ route('boolean.index') }}">BOOLEAN</a>
                 </div>
 
                 <div class="links">

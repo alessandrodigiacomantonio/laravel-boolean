@@ -14,6 +14,6 @@ class BooleanController extends Controller
       [],
       [],
     ];
-    return view('boolean.index', compact('students'))
+    return view('boolean.index', compact('students'));
   }
 }
