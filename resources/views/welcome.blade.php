@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <a href="{{ route('boolean') }}">BOOLEAN</a>
                 </div>
 
                 <div class="links">
