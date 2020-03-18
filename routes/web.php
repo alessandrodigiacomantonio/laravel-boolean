@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/boolean', 'BooleanController@index')->name('boolean.index');
-Route::get('/boolean/studente-{slug}', 'BooleanController@getStudentFromName')->name('boolean.getStudentFromName');
+Route::get('/boolean/studenti', 'BooleanController@index')->name('boolean.index');
+Route::get('/boolean/studenti/{slug}', 'BooleanController@getStudentByName')->name('boolean.getStudentByName');
+Route::post('/boolean/studenti', 'BooleanController@postStudentByAge')->name('boolean.postStudentByAge');

@@ -1,6 +1,6 @@
 @extends('layout')
 @section('main')
-  @if(count($students)>1)
+  @if(count($students)!==1)
     <select class="main__select-by-years">
       <option value="all">Tutti gli Studenti</option>
       <option value="under_30">Studenti sotto i 30 anni</option>
@@ -10,14 +10,14 @@
   @endif
   <section class="main__students">
     @foreach($students as $student)
-      <a class="main__students__student-card" href="{{ route('boolean.getStudentFromName', ['slug'=>$student['slug']]) }}">
+      <a class="main__students__student-card" href="{{ route('boolean.getStudentByName', ['slug'=>$student['slug']]) }}">
         <div class="main__students__student-card__primary-info">
           <div class="student-card__primary-info__image">
             <img src="{{$student['img']}}" alt="immagine profilo studente">
           </div>
           <div class="student-card__primary-info__text">
             <h3>
-              {{$student['name']}} <span>({{$student['eta']}} anni)</span>
+              {{$student['name']}} <span>({{$student['age']}} anni)</span>
             </h3>
             <p>
               Lavora in {{$student['company']}} come {{$student['job']}}

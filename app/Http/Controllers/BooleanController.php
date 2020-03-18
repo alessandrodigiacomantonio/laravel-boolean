@@ -11,7 +11,7 @@ class BooleanController extends Controller
     $students = config('students');
     return view('boolean.index', compact('students'));
   }
-  public function getStudentFromName($slug)
+  public function getStudentByName($slug)
   {
     $students = config('students');
     foreach($students as $student) {
@@ -19,5 +19,26 @@ class BooleanController extends Controller
     }
     $students = $this_student;
     return view('boolean.index', compact('students'));
+  }
+  public function postStudentByAge(Request $request)
+  {
+    $response = $request->all();
+    $students = config('students');
+    foreach($students as $student) {
+      if($response['age']=='under_30') {
+        if ( $student['age'] < 30) $selected_students[] = $student;
+      }
+      if($response['age']=='between_30_50') {
+        if ( $student['age'] >= 30 && $student['age'] <= 50) $selected_students[] = $student;
+      }
+      if($response['age']=='over_50') {
+        if ( $student['age'] > 50) $selected_students[] = $student;
+      }
+      if($response['age']=='all') {
+        $selected_students[] = $students;
+      }
+    }
+    $students = $selected_students;
+    return $students;
   }
 }
