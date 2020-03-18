@@ -55,13 +55,14 @@ body {
 
 .main__students__student-card__primary-info .student-card__primary-info__image {
   height: 100%;
+  width: 125px;
+  margin-right: 20px;
 }
 
 .main__students__student-card__primary-info .student-card__primary-info__image img {
   height: 100%;
   border-radius: 8px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
-  margin-right: 20px;
 }
 
 .main__students__student-card__primary-info .student-card__primary-info__text {

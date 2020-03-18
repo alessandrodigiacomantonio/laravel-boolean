@@ -43,11 +43,12 @@ body {
         height: 125px;
         .student-card__primary-info__image {
           height: 100%;
+          width: 125px;
+          margin-right: 20px;  
           & img {
             height: 100%;
             border-radius: 8px;
             box-shadow: 1px 1px 8px rgba(00,00,00,0.5);
-            margin-right: 20px;
           }
         }
         .student-card__primary-info__text {
