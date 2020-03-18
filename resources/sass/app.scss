@@ -26,6 +26,8 @@ body {
       box-shadow: 3px 3px 20px rgba(100,100,100,0.5);
       width: 45%;
       min-height: 400px;
+      text-decoration: none;
+      color: slategrey;
       &__primary-info {
         display: flex;
         flex-wrap: nowrap;
