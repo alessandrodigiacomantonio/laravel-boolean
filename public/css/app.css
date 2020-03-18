@@ -33,6 +33,18 @@ body {
   min-height: 400px;
   text-decoration: none;
   color: slategrey;
+  transition: 0.2s;
+}
+
+.main__students__student-card:hover {
+  transform: scale(1.05);
+  -webkit-filter: brightness(0.96);
+          filter: brightness(0.96);
+  background-color: white;
+}
+
+.main__students__student-card:active {
+  transform: scale(0.98);
 }
 
 .main__students__student-card__primary-info {

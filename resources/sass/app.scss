@@ -28,6 +28,15 @@ body {
       min-height: 400px;
       text-decoration: none;
       color: slategrey;
+      transition: 0.2s;
+      &:hover{
+        transform: scale(1.05);
+        filter: brightness(0.96);
+        background-color: white;
+      }
+      &:active {
+        transform: scale(0.98);
+      }
       &__primary-info {
         display: flex;
         flex-wrap: nowrap;
