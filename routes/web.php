@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/boolean', 'BooleanController@index')->name('boolean.index');
+Route::get('/boolean/studente-{slug}', 'BooleanController@getStudentFromName')->name('boolean.getStudentFromName');
