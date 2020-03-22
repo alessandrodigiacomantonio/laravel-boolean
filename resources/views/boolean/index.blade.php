@@ -13,7 +13,7 @@
       <a class="main__students__student-card" href="{{ route('boolean.getStudentByName', ['slug'=>$student['slug']]) }}">
         <div class="main__students__student-card__primary-info">
           <div class="student-card__primary-info__image">
-            <img src="{{$student['img']}}" alt="immagine profilo studente">
+            <img src="{{$student['url_img']}}" alt="immagine profilo studente">
           </div>
           <div class="student-card__primary-info__text">
             <h3>

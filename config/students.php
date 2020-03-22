@@ -3,7 +3,7 @@
   [
     'students' =>
       [
-        'img'=>'https://www.boolean.careers/images/students/biagini.png',
+        'url_img'=>'https://www.boolean.careers/images/students/biagini.png',
         'name'=>'Alessandro Biacini',
         'age'=>25,
         'company'=>'DISC SPA',
@@ -12,7 +12,7 @@
         'slug'=>'alessandro_biacini',
       ],
       [
-        'img'=>'https://www.boolean.careers/images/students/poggini.png',
+        'url_img'=>'https://www.boolean.careers/images/students/poggini.png',
         'name'=>'Paola Poggiani',
         'age'=>24,
         'company'=>'Prima Assicurazione',
@@ -21,7 +21,7 @@
         'slug'=>'paola_poggiani',
       ],
       [
-        'img'=>'https://www.boolean.careers/images/students/masetti.png',
+        'url_img'=>'https://www.boolean.careers/images/students/masetti.png',
         'name'=>'Loana Masetti',
         'age'=>36,
         'company'=>'The Zen Agency',
@@ -30,7 +30,7 @@
         'slug'=>'loana_masetti',
       ],
       [
-        'img'=>'https://www.boolean.careers/images/students/patruno.png',
+        'url_img'=>'https://www.boolean.careers/images/students/patruno.png',
         'name'=>'Davide Patruno',
         'age'=>29,
         'company'=>'ArmadioVerde',

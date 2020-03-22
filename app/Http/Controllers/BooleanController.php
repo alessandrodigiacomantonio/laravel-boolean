@@ -3,17 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Student;
 
 class BooleanController extends Controller
 {
   public function index()
   {
-    $students = config('students');
+    // $students = config('students');
+    $students = Student::all();
     return view('boolean.index', compact('students'));
   }
   public function getStudentByName($slug)
   {
-    $students = config('students');
+    // $students = config('students');
+    $students = Student::all();
     foreach($students as $student) {
       if ($student['slug'] == $slug) $this_student[] = $student;
     }
@@ -23,7 +26,8 @@ class BooleanController extends Controller
   public function postStudentByAge(Request $request)
   {
     $response = $request->all();
-    $students = config('students');
+    // $students = config('students');
+    $students = Student::all();
     foreach($students as $student) {
       if($response['age']=='under_30') {
         if ( $student['age'] < 30) $selected_students[] = $student;
